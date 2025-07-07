@@ -148,7 +148,6 @@ public class Authentication {
 					//.body("authenticated", equalTo(true))
 					.log().all();
 					
-					System.out.println("Hi Test");
 				}		
 
 }
