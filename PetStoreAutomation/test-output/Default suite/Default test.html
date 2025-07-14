@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>17/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jul 08 15:46:54 IST 2025</td>
+<td>Started on:</td><td>Fri Jul 11 16:20:33 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>7 seconds (7900 ms)</td>
+<tr><td>Total time:</td><td>35 seconds (35978 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,7 +76,7 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='api.test.UserTest.getUserByNameTest()'><b>getUserByNameTest</b><br>Test class: api.test.UserTest</td>
+<td title='api.test.DataDrivenTest.deleteUserByNameTest()'><b>deleteUserByNameTest</b><br>Test class: api.test.DataDrivenTest<br>Parameters: john8</td>
 <td><div><pre>java.lang.AssertionError: expected [200] but found [404]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
@@ -85,7 +85,7 @@ function toggleAllBoxes() {
 	at org.testng.Assert.assertEquals(Assert.java:1419)
 	at org.testng.Assert.assertEquals(Assert.java:1383)
 	at org.testng.Assert.assertEquals(Assert.java:1429)
-	at api.test.UserTest.getUserByNameTest(UserTest.java:44)
+	at api.test.DataDrivenTest.deleteUserByNameTest(DataDrivenTest.java:41)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -112,8 +112,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace685428529", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace685428529'><pre>java.lang.AssertionError: expected [200] but found [404]
+</pre></div><a href='#' onClick='toggleBox("stack-trace1496396949", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1496396949'><pre>java.lang.AssertionError: expected [200] but found [404]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -121,7 +121,7 @@ function toggleAllBoxes() {
 	at org.testng.Assert.assertEquals(Assert.java:1419)
 	at org.testng.Assert.assertEquals(Assert.java:1383)
 	at org.testng.Assert.assertEquals(Assert.java:1429)
-	at api.test.UserTest.getUserByNameTest(UserTest.java:44)
+	at api.test.DataDrivenTest.deleteUserByNameTest(DataDrivenTest.java:41)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -150,7 +150,159 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>1</td>
-<td>api.test.UserTest@6c40365c</td></tr>
+<td>api.test.DataDrivenTest@6743e411</td></tr>
+<tr>
+<td title='api.test.DataDrivenTest.deleteUserByNameTest()'><b>deleteUserByNameTest</b><br>Test class: api.test.DataDrivenTest<br>Parameters: john3</td>
+<td><div><pre>java.lang.AssertionError: expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at org.testng.Assert.assertEquals(Assert.java:1429)
+	at api.test.DataDrivenTest.deleteUserByNameTest(DataDrivenTest.java:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace138617961", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace138617961'><pre>java.lang.AssertionError: expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at org.testng.Assert.assertEquals(Assert.java:1429)
+	at api.test.DataDrivenTest.deleteUserByNameTest(DataDrivenTest.java:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>1</td>
+<td>api.test.DataDrivenTest@6743e411</td></tr>
+<tr>
+<td title='api.test.DataDrivenTest.deleteUserByNameTest()'><b>deleteUserByNameTest</b><br>Test class: api.test.DataDrivenTest<br>Parameters: john1</td>
+<td><div><pre>java.lang.AssertionError: expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at org.testng.Assert.assertEquals(Assert.java:1429)
+	at api.test.DataDrivenTest.deleteUserByNameTest(DataDrivenTest.java:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace514556983", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace514556983'><pre>java.lang.AssertionError: expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at org.testng.Assert.assertEquals(Assert.java:1429)
+	at api.test.DataDrivenTest.deleteUserByNameTest(DataDrivenTest.java:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>1</td>
+<td>api.test.DataDrivenTest@6743e411</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -161,20 +313,90 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='api.test.UserTest.createUserTest()'><b>createUserTest</b><br>Test class: api.test.UserTest</td>
-<td></td>
-<td>2</td>
-<td>api.test.UserTest@6c40365c</td></tr>
-<tr>
-<td title='api.test.UserTest.updateUserTest()'><b>updateUserTest</b><br>Test class: api.test.UserTest</td>
-<td></td>
-<td>2</td>
-<td>api.test.UserTest@6c40365c</td></tr>
-<tr>
-<td title='api.test.UserTest.deleteUserByNameTest()'><b>deleteUserByNameTest</b><br>Test class: api.test.UserTest</td>
+<td title='api.test.DataDrivenTest.deleteUserByNameTest()'><b>deleteUserByNameTest</b><br>Test class: api.test.DataDrivenTest<br>Parameters: john2</td>
 <td></td>
 <td>1</td>
-<td>api.test.UserTest@6c40365c</td></tr>
+<td>api.test.DataDrivenTest@6743e411</td></tr>
+<tr>
+<td title='api.test.DataDrivenTest.postUserTest()'><b>postUserTest</b><br>Test class: api.test.DataDrivenTest<br>Parameters: 1003, john3, John, Three, john3@yopmail.com, password, 9876543212</td>
+<td></td>
+<td>1</td>
+<td>api.test.DataDrivenTest@6743e411</td></tr>
+<tr>
+<td title='api.test.DataDrivenTest.deleteUserByNameTest()'><b>deleteUserByNameTest</b><br>Test class: api.test.DataDrivenTest<br>Parameters: john9</td>
+<td></td>
+<td>1</td>
+<td>api.test.DataDrivenTest@6743e411</td></tr>
+<tr>
+<td title='api.test.DataDrivenTest.deleteUserByNameTest()'><b>deleteUserByNameTest</b><br>Test class: api.test.DataDrivenTest<br>Parameters: john6</td>
+<td></td>
+<td>1</td>
+<td>api.test.DataDrivenTest@6743e411</td></tr>
+<tr>
+<td title='api.test.DataDrivenTest.postUserTest()'><b>postUserTest</b><br>Test class: api.test.DataDrivenTest<br>Parameters: 1008, john8, John, Eight, john8@yopmail.com, password, 9876543217</td>
+<td></td>
+<td>1</td>
+<td>api.test.DataDrivenTest@6743e411</td></tr>
+<tr>
+<td title='api.test.DataDrivenTest.postUserTest()'><b>postUserTest</b><br>Test class: api.test.DataDrivenTest<br>Parameters: 1005, john5, John, Five, john5@yopmail.com, password, 9876543214</td>
+<td></td>
+<td>1</td>
+<td>api.test.DataDrivenTest@6743e411</td></tr>
+<tr>
+<td title='api.test.DataDrivenTest.postUserTest()'><b>postUserTest</b><br>Test class: api.test.DataDrivenTest<br>Parameters: 1007, john7, John, Seven, john7@yopmail.com, password, 9876543216</td>
+<td></td>
+<td>1</td>
+<td>api.test.DataDrivenTest@6743e411</td></tr>
+<tr>
+<td title='api.test.DataDrivenTest.postUserTest()'><b>postUserTest</b><br>Test class: api.test.DataDrivenTest<br>Parameters: 1002, john2, John, Two, john2@yopmail.com, password, 9876543211</td>
+<td></td>
+<td>1</td>
+<td>api.test.DataDrivenTest@6743e411</td></tr>
+<tr>
+<td title='api.test.DataDrivenTest.postUserTest()'><b>postUserTest</b><br>Test class: api.test.DataDrivenTest<br>Parameters: 1006, john6, John, Six, john6@yopmail.com, password, 9876543215</td>
+<td></td>
+<td>1</td>
+<td>api.test.DataDrivenTest@6743e411</td></tr>
+<tr>
+<td title='api.test.DataDrivenTest.deleteUserByNameTest()'><b>deleteUserByNameTest</b><br>Test class: api.test.DataDrivenTest<br>Parameters: john7</td>
+<td></td>
+<td>1</td>
+<td>api.test.DataDrivenTest@6743e411</td></tr>
+<tr>
+<td title='api.test.DataDrivenTest.deleteUserByNameTest()'><b>deleteUserByNameTest</b><br>Test class: api.test.DataDrivenTest<br>Parameters: john10</td>
+<td></td>
+<td>1</td>
+<td>api.test.DataDrivenTest@6743e411</td></tr>
+<tr>
+<td title='api.test.DataDrivenTest.postUserTest()'><b>postUserTest</b><br>Test class: api.test.DataDrivenTest<br>Parameters: 1004, john4, John, Four, john4@yopmail.com, password, 9876543213</td>
+<td></td>
+<td>1</td>
+<td>api.test.DataDrivenTest@6743e411</td></tr>
+<tr>
+<td title='api.test.DataDrivenTest.postUserTest()'><b>postUserTest</b><br>Test class: api.test.DataDrivenTest<br>Parameters: 1001, john1, John, One, john1@yopmail.com, password, 9876543210</td>
+<td></td>
+<td>3</td>
+<td>api.test.DataDrivenTest@6743e411</td></tr>
+<tr>
+<td title='api.test.DataDrivenTest.deleteUserByNameTest()'><b>deleteUserByNameTest</b><br>Test class: api.test.DataDrivenTest<br>Parameters: john5</td>
+<td></td>
+<td>1</td>
+<td>api.test.DataDrivenTest@6743e411</td></tr>
+<tr>
+<td title='api.test.DataDrivenTest.postUserTest()'><b>postUserTest</b><br>Test class: api.test.DataDrivenTest<br>Parameters: 1009, john9, John, Nine, john9@yopmail.com, password, 9876543218</td>
+<td></td>
+<td>1</td>
+<td>api.test.DataDrivenTest@6743e411</td></tr>
+<tr>
+<td title='api.test.DataDrivenTest.postUserTest()'><b>postUserTest</b><br>Test class: api.test.DataDrivenTest<br>Parameters: 1010, john10, John, Ten, john10@yopmail.com, password, 9876543219</td>
+<td></td>
+<td>1</td>
+<td>api.test.DataDrivenTest@6743e411</td></tr>
+<tr>
+<td title='api.test.DataDrivenTest.deleteUserByNameTest()'><b>deleteUserByNameTest</b><br>Test class: api.test.DataDrivenTest<br>Parameters: john4</td>
+<td></td>
+<td>1</td>
+<td>api.test.DataDrivenTest@6743e411</td></tr>
 </table><p>
 </body>
 </html>
