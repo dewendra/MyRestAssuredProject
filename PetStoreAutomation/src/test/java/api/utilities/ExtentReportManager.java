@@ -4,6 +4,7 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -19,16 +20,23 @@ public class ExtentReportManager implements ITestListener {
 	public static ExtentReports extent;
 	public static ExtentTest test;
 
-	String repName;
 	
 	public void onStart(ITestContext testContext) {
+		String repName;
 		
 		String timeStamp = new SimpleDateFormat("yyyy.mm.dd.HH.mm.ss").format(new Date());// time stamp
 		repName = "Test-Report-" + timeStamp + ".html";
 
-		//htmlReporter=new ExtentSparkReporter("./reports/"+repName);
+		htmlReporter=new ExtentSparkReporter(".\\reports\\"+repName);
+		/*
+		 * htmlReporter= new ExtentSparkReporter(System.getProperty("user.dir")+
+		 * "/test-output/ExtentReport/"+"MyReport.html"); try {
+		 * htmlReporter.loadXMLConfig(System.getProperty("user.dir")+
+		 * "/extent-config.xml"); } catch (IOException e) { 
+		 *  e.printStackTrace(); }
+		 */
 		
-		htmlReporter = new ExtentSparkReporter(System.getProperty("user.dir") + "/test-output/ExtentReport/" + repName);
+		//htmlReporter = new ExtentSparkReporter(System.getProperty("user.dir") + "/test-output/ExtentReport/" + repName);
 		htmlReporter.config().setDocumentTitle("RestAssured Automation Project");
 		htmlReporter.config().setReportName("Pet Store Users API");
 		htmlReporter.config().setTheme(Theme.DARK);
