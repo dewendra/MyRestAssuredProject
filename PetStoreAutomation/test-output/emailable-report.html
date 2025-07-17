@@ -9,11 +9,15 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">PetSuite</th></tr>
-<tr><td><a href="#t0">PetStore</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">5,454</td><td></td><td></td></tr>
+<tr><td><a href="#t0">PetStore</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">5,419</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">PetSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">PetStore &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">api.test.UserTest2</td><td><a href="#m0">deleteUserByNameTest</a></td><td rowspan="1">1752573810854</td><td rowspan="1">6</td></tr><tr class="failedeven"><td><a href="#m1">updateUserTest</a></td><td rowspan="1">1752573810839</td><td rowspan="1">13</td></tr><tr><th colspan="4">PetStore &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">api.test.UserTest2</td><td><a href="#m2">createUserTest</a></td><td rowspan="1">1752573805960</td><td rowspan="1">3141</td></tr><tr class="passedeven"><td><a href="#m3">getUserByNameTest</a></td><td rowspan="1">1752573809109</td><td rowspan="1">1727</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">PetSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">PetStore &#8212; failed</th></tr><tr class="failedeven"><td rowspan="4">api.test.UserTest2</td><td><a href="#m0">createUserTest</a></td><td rowspan="1">1752730995419</td><td rowspan="1">3248</td></tr><tr class="failedeven"><td><a href="#m1">deleteUserByNameTest</a></td><td rowspan="1">1752731000103</td><td rowspan="1">8</td></tr><tr class="failedeven"><td><a href="#m2">getUserByNameTest</a></td><td rowspan="1">1752730998678</td><td rowspan="1">1395</td></tr><tr class="failedeven"><td><a href="#m3">updateUserTest</a></td><td rowspan="1">1752731000075</td><td rowspan="1">25</td></tr></tbody>
 </table>
-<h2>PetStore</h2><h3 id="m0">api.test.UserTest2#deleteUserByNameTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 0, was 1. Redundant path parameters are: username=estela.tremblay.
+<h2>PetStore</h2><h3 id="m0">api.test.UserTest2#createUserTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [200] but found [403]
+	at api.test.UserTest2.createUserTest(UserTest2.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">api.test.UserTest2#deleteUserByNameTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 0, was 1. Redundant path parameters are: username=sharika.armstrong.
 	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
 	at io.restassured.internal.RequestSpecificationImpl.assertCorrectNumberOfPathParams(RequestSpecificationImpl.groovy:1277)
@@ -83,7 +87,11 @@
 	at api.test.UserTest2.deleteUserByNameTest(UserTest2.java:80)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 ... Removed 42 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">api.test.UserTest2#updateUserTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 0, was 1. Redundant path parameters are: username=estela.tremblay.
+<h3 id="m2">api.test.UserTest2#getUserByNameTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [200] but found [403]
+	at api.test.UserTest2.getUserByNameTest(UserTest2.java:53)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">api.test.UserTest2#updateUserTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 0, was 1. Redundant path parameters are: username=sharika.armstrong.
 	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
 	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
@@ -155,7 +163,5 @@
 	at api.test.UserTest2.updateUserTest(UserTest2.java:64)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 ... Removed 42 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">api.test.UserTest2#createUserTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">api.test.UserTest2#getUserByNameTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
