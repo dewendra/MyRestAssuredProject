@@ -36,7 +36,7 @@ public class DataDrivenTest {
 	public void deleteUserByNameTest(String userName) {
 		System.out.println("user name : "+userName);
 		Response response = UserEndPoints.deleteUser(userName);
-		System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+		System.out.println("++++++++++++++++++++++++++++************+++++++++++++++++++++++++++++");
 		System.out.println("DELETED");
 		Assert.assertEquals(response.getStatusCode(), 200);
 
