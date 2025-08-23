@@ -1,63 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-02T16:07:12 IST" name="Suite" finished-at="2025-07-02T16:07:18 IST" duration-ms="5807">
+  <suite started-at="2025-08-10T21:33:22 IST" name="Default suite" finished-at="2025-08-10T21:33:24 IST" duration-ms="1815">
     <groups>
     </groups>
-    <test started-at="2025-07-02T16:07:12 IST" name="Test" finished-at="2025-07-02T16:07:18 IST" duration-ms="5807">
-      <class name="com.restAssured.gorestapichaining.GoRestAPIDeleteUser">
-        <test-method signature="deleteUser(org.testng.ITestContext)[pri:0, instance:com.restAssured.gorestapichaining.GoRestAPIDeleteUser@815b41f]" started-at="2025-07-02T16:07:16 IST" name="deleteUser" finished-at="2025-07-02T16:07:18 IST" duration-ms="1058" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@120f102b]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2025-08-10T21:33:22 IST" name="Default test" finished-at="2025-08-10T21:33:24 IST" duration-ms="1815">
+      <class name="com.rahulshetty.restAssured.AutomateGet">
+        <test-method signature="logs_blacklist_header()[pri:0, instance:com.rahulshetty.restAssured.AutomateGet@5b12b668]" started-at="2025-08-10T21:33:22 IST" name="logs_blacklist_header" finished-at="2025-08-10T21:33:24 IST" duration-ms="1782" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deleteUser -->
-      </class> <!-- com.restAssured.gorestapichaining.GoRestAPIDeleteUser -->
-      <class name="com.restAssured.gorestapichaining.GoRestAPIGetUser">
-        <test-method signature="getUser(org.testng.ITestContext)[pri:0, instance:com.restAssured.gorestapichaining.GoRestAPIGetUser@7586beff]" started-at="2025-07-02T16:07:15 IST" name="getUser" finished-at="2025-07-02T16:07:15 IST" duration-ms="715" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@120f102b]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getUser -->
-      </class> <!-- com.restAssured.gorestapichaining.GoRestAPIGetUser -->
-      <class name="com.restAssured.gorestapichaining.GoRestAPIUpdateUser">
-        <test-method signature="updateUser(org.testng.ITestContext)[pri:0, instance:com.restAssured.gorestapichaining.GoRestAPIUpdateUser@3b69e7d1]" started-at="2025-07-02T16:07:15 IST" name="updateUser" finished-at="2025-07-02T16:07:16 IST" duration-ms="1081" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@120f102b]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateUser -->
-      </class> <!-- com.restAssured.gorestapichaining.GoRestAPIUpdateUser -->
-      <class name="com.restAssured.gorestapichaining.GoRestAPICreateUser">
-        <test-method signature="createUser(org.testng.ITestContext)[pri:0, instance:com.restAssured.gorestapichaining.GoRestAPICreateUser@6025e1b6]" started-at="2025-07-02T16:07:12 IST" name="createUser" finished-at="2025-07-02T16:07:15 IST" duration-ms="2913" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@120f102b]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createUser -->
-      </class> <!-- com.restAssured.gorestapichaining.GoRestAPICreateUser -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- logs_blacklist_header -->
+      </class> <!-- com.rahulshetty.restAssured.AutomateGet -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
