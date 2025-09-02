@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.rahulshetty.restAssured.AutomateGet">
+      <class name="com.rahulshetty.restAssured.StaticImports">
         <methods>
-          <include name="logs_blacklist_header"/>
+          <include name="simple_test_case"/>
         </methods>
-      </class> <!-- com.rahulshetty.restAssured.AutomateGet -->
+      </class> <!-- com.rahulshetty.restAssured.StaticImports -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
