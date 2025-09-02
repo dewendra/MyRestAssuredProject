@@ -21,10 +21,10 @@ public class AutomateGet {
 
 	//@Test
 	public void validate_get_status_code() {
-		String api_key="PMAK-689775b3cb982b000105dc8d-1eaee3edb9e53cd754434993ff27cdb4fa";
+		
 		given()
 		.baseUri("https://api.postman.com")
-		.header("x-api-Key",api_key)
+		//.header("x-api-Key",api_key)
 		
 		.when()
 		.get("/workspaces")
