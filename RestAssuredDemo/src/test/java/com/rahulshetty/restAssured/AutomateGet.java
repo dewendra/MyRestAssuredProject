@@ -21,7 +21,7 @@ public class AutomateGet {
 
 	//@Test
 	public void validate_get_status_code() {
-		String api_key="PMAK-689775b3cb982b000105dc8d-1eaee3edb9e53cd754434993ff27cdb4fa";
+		String api_key="PMAK-689775b3cb982b000105dc8d-1eaee3edb9e53cd754434993ff27cdb4fb";
 		given()
 		.baseUri("https://api.postman.com")
 		.header("x-api-Key",api_key)
@@ -43,7 +43,7 @@ public class AutomateGet {
 	
 	//@Test
 	public void extract_response() {
-		String api_key="PMAK-689775b3cb982b000105dc8d-1eaee3edb9e53cd754434993ff27cdb4fa";
+		String api_key="PMAK-689775b3cb982b000105dc8d-1eaee3edb9e53cd754434993ff27cdb4fb";
 		Response res=given()
 		.baseUri("https://api.postman.com")
 		.header("x-api-Key",api_key)
@@ -59,7 +59,7 @@ public class AutomateGet {
 	
 	//@Test
 	public void extract_single_value_from_response() {
-		String api_key="PMAK-689775b3cb982b000105dc8d-1eaee3edb9e53cd754434993ff27cdb4fa";
+		String api_key="PMAK-689775b3cb982b000105dc8d-1eaee3edb9e53cd754434993ff27cdb4fb";
 		Response res=given()
 		.baseUri("https://api.postman.com")
 		.header("x-api-Key",api_key)
@@ -78,7 +78,7 @@ public class AutomateGet {
 	
 	//@Test
 	public void hamcrest_assert_on_extracted_response() {
-		//String api_key="PMAK-689775b3cb982b000105dc8d-1eaee3edb9e53cd754434993ff27cdb4fa";
+		//String api_key="PMAK-689775b3cb982b000105dc8d-1eaee3edb9e53cd754434993ff27cdb4fb";
 		
 		String name=given()
 		.baseUri("https://api.postman.com")
@@ -95,7 +95,7 @@ public class AutomateGet {
 	}
 	//@Test
 	public void request_response_logging() {
-		String api_key="PMAK-689775b3cb982b000105dc8d-1eaee3edb9e53cd754434993ff27cdb4fa";
+		String api_key="PMAK-689775b3cb982b000105dc8d-1eaee3edb9e53cd754434993ff27cdb4fb";
 		given()
 		.baseUri("https://api.postman.com")
 		.header("x-api-Key",api_key)
@@ -115,7 +115,7 @@ public class AutomateGet {
 	
 	//@Test
 	public void log_only_if_validation_fails() {
-		String api_key="PMAK-689775b3cb982b000105dc8d-1eaee3edb9e53cd754434993ff27cdb4fa";
+		String api_key="PMAK-689775b3cb982b000105dc8d-1eaee3edb9e53cd754434993ff27cdb4fb";
 		given()
 		.baseUri("https://api.postman.com")
 		.header("x-api-Key",api_key)
@@ -131,7 +131,7 @@ public class AutomateGet {
 	}
 	@Test
 	public void logs_blacklist_header() {
-		String api_key="PMAK-689775b3cb982b000105dc8d-1eaee3edb9e53cd754434993ff27cdb4fa";
+		String api_key="PMAK-689775b3cb982b000105dc8d-1eaee3edb9e53cd754434993ff27cdb4fb";
 		Set<String> headers=new HashSet<String>();
 		headers.add("x-api-Key");
 		headers.add("Accept");
