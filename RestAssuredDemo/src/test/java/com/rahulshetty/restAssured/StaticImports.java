@@ -14,7 +14,7 @@ public class StaticImports {
 					given()
 						.baseUri("https://api.postman.com")
 						//.header("x-api-Key",api_key)
-					.when()
+					.when() 
 						.get("/workspaces")
 					.then()
 						.statusCode(200)
