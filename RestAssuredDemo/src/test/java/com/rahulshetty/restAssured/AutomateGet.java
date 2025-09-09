@@ -21,7 +21,7 @@ public class AutomateGet {
 
 	//@Test
 	public void validate_get_status_code() {
-		
+		 
 		given()
 		.baseUri("https://api.postman.com")
 		//.header("x-api-Key",api_key)

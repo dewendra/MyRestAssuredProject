@@ -19,6 +19,6 @@ public class StaticImports {
 					.then()
 						.statusCode(200)
 						.body("workspaces.name",hasItem("My Workspace"));
-					
+				 	
 	}
 }

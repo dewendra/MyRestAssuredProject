@@ -18,5 +18,5 @@ public class NonStaticImports {
 						.body("name",Matchers.is(Matchers.equalTo("dewendra")),
 								"email",Matchers.is(Matchers.equalTo("dewendra.singh@yahoo.com")));
 	}
-
+ 
 }
