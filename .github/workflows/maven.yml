@@ -4,6 +4,7 @@ on:
   push:
     branches: [ "master" ]
     paths:
+      - '.github/workflows/**'   # run when any workflow file changes
       - 'BankingAPIAutomation/**'   # Run only when BankingAPIAutomation files change
   pull_request:
     branches: [ "master" ]
