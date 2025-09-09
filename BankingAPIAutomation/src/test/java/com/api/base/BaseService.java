@@ -14,6 +14,7 @@ import io.restassured.specification.RequestSpecification;
 //Handling the response
 public class BaseService { // Wrapper for Rest Assured
 
+	
 	// http://64.227.160.186:8080/swagger-ui/index.html#/
 	private static final String BASE_URL = "http://64.227.160.186:8080";
 	private RequestSpecification requestSpecification;
