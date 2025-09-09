@@ -4,26 +4,26 @@ on:
   push:
     branches: [ "master" ]
     paths:
-      - 'BankingAPIAutomation/**'   # 👈 Only run when files inside BankingAPIAutomation change
+      - 'BankingAPIAutomation/**'   # Run only when BankingAPIAutomation files change
   pull_request:
     branches: [ "master" ]
     paths:
       - 'BankingAPIAutomation/**'
   schedule:
-    - cron: '00 18 * * *'  # Daily at 11:30 PM IST (6:00 PM UTC)
-    - cron: '00 3 * * *'   # Daily at 8:35 AM IST (3:00 AM UTC)
+    - cron: '30 18 * * *'  # Daily at 11:30 PM IST (6:00 PM UTC)
+    - cron: '05 3 * * *'   # Daily at 8:35 AM IST (3:05 AM UTC)
   workflow_dispatch:        # Allow manual trigger from GitHub UI
 
 jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-    contents: read
-    checks: write
-    issues: write
+      contents: read
+      checks: write
+      issues: write
     defaults:
       run:
-        working-directory: BankingAPIAutomation   # 👈 Set BankingAPIAutomation as working dir
+        working-directory: BankingAPIAutomation   # Set BankingAPIAutomation as working dir
 
     steps:
     - uses: actions/checkout@v4
@@ -50,5 +50,5 @@ jobs:
       uses: dorny/test-reporter@v1
       with:
         name: TestNG Results
-        path: test-output/junitreports/TEST-*.xml
+        path: BankingAPIAutomation/target/surefire-reports/junitreports/TEST-*.xml
         reporter: java-junit
