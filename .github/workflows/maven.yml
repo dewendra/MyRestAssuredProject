@@ -3,8 +3,12 @@ name: API Test Framework
 on:
   push:
     branches: [ "master" ]
+    paths:
+      - 'BankingAPIAutomation/**' 
   pull_request:
     branches: [ "master" ]
+    paths:
+      - 'BankingAPIAutomation/**' 
 schedule:
     # Runs twice: daily at 2 AM UTC and Monday/Thursday at 2 PM UTC
     - cron: '0 18 * * *'     # Daily at 2 AM UTC
@@ -14,6 +18,9 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: BankingAPIAutomation
 
     steps:
     - uses: actions/checkout@v4
@@ -25,13 +32,13 @@ jobs:
         distribution: 'temurin'
         cache: maven
         
-    - name: Execute Test
+     - name: Execute Banking API Automation Tests
       run: mvn clean test -Dsuite=suite -X
 - name: Upload a Build Artifact
 uses: actions/upload-artifact@v4.6.2
 with:
 name:Logs
-     path: logs/
+     path: BankingAPIAutomation/logs/
 
      -name: Publish Test Report
      if: always()
