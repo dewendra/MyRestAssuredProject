@@ -17,6 +17,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+    contents: read
+    checks: write
+    issues: write
     defaults:
       run:
         working-directory: BankingAPIAutomation   # 👈 Set BankingAPIAutomation as working dir
@@ -46,5 +50,5 @@ jobs:
       uses: dorny/test-reporter@v1
       with:
         name: TestNG Results
-        path: target/surefire-reports/junitreports/TEST-*.xml
+        path: test-output/junitreports/TEST-*.xml
         reporter: java-junit
