@@ -10,10 +10,12 @@ public class LoginAPITest {
 	
 
 	public static void main(String[] args) {
+		
 		LoginPayload loginPayload=new LoginPayload("iamfd", "password");
 		
 		baseURI="http://64.227.160.186:9000/v1/";
 		String base_PATH="login";
+		
 		LoginResponse loginResponse=given()
 		.baseUri(baseURI)
 		.header("Content-Type","application/json")
