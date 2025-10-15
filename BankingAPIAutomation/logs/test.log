@@ -234,3 +234,12 @@ Connection=keep-alive
 }
 16:56:19:576 [main] INFO  com.api.listeners.TestListeners - !! Passed !!loginTest
 16:56:19:590 [main] INFO  com.api.listeners.TestListeners - Test suit finished
+10:33:47:150 [main] INFO  com.api.listeners.TestListeners - Test suit started
+10:33:47:191 [main] INFO  com.api.listeners.TestListeners - StartedloginTest
+10:33:47:191 [main] INFO  com.api.listeners.TestListeners - !! Description !!Verify if Login API is working......
+10:33:48:388 [main] INFO  com.api.filters.LogginFilter - BASE_URI:http://64.227.160.186:8080
+10:33:48:388 [main] INFO  com.api.filters.LogginFilter - Request Header:Accept=*/*
+Content-Type=application/json
+10:33:48:388 [main] INFO  com.api.filters.LogginFilter - Request Payload:{"username":"dewendra","password":"#System4techwithjatin"}
+10:33:57:042 [main] ERROR com.api.listeners.TestListeners - !! Faild !!loginTest
+10:33:57:091 [main] INFO  com.api.listeners.TestListeners - Test suit finished

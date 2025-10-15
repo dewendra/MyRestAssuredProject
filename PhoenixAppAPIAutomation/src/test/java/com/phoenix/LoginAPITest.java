@@ -11,6 +11,8 @@ public class LoginAPITest {
 
 	public static void main(String[] args) {
 		
+		//http://phoenix.techwithjatin.com/
+		
 		LoginPayload loginPayload=new LoginPayload("iamfd", "password");
 		
 		baseURI="http://64.227.160.186:9000/v1/";

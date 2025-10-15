@@ -25,7 +25,7 @@ public class CharityTest {
 
 	@Test(priority = 1)
 	public void categoryTest() {
-		logger.info("***************************Testing Category**----*************************");
+		logger.info("***************************Testing Category***************************");
 		//Response response = CharityEndPoints.categoryList();
 		Response response = CharityEndPoint.activeRequest();
 		response.then().log().all();

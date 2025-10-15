@@ -1,6 +1,6 @@
 package com.hdor.charityApp.endpoints;
 
-import static io.restassured.RestAssured.given;
+import static io.restassured.RestAssured.*;
 
 import java.util.HashMap;
 
