@@ -1,0 +1,98 @@
+{
+    $schema httpjson-schema.orgdraft-06schema#,
+    $ref #definitionsWelcome3,
+    definitions {
+        Welcome3 {
+            type object,
+            additionalProperties false,
+            properties {
+                status {
+                    type boolean
+                },
+                data {
+                    $ref #definitionsData
+                }
+            },
+            required [
+                data,
+                status
+            ],
+            title Welcome3
+        },
+        Data {
+            type object,
+            additionalProperties false,
+            properties {
+                rowId {
+                    type integer
+                },
+                pincode {
+                    type string,
+                    format integer
+                },
+                country {
+                    type string
+                },
+                state {
+                    type string
+                },
+                city {
+                    type string
+                },
+                address1 {
+                    type string
+                },
+                address2 {
+                    type string
+                },
+                landmark {
+                    type string
+                },
+                label {
+                    type string
+                },
+                mobile {
+                    type string
+                },
+                mobileCode {
+                    type string,
+                    format integer
+                },
+                countryId {
+                    type integer
+                },
+                stateId {
+                    type integer
+                },
+                cityId {
+                    type integer
+                },
+                firstName {
+                    type string
+                },
+                lastName {
+                    type string
+                }
+            },
+            required [
+                address1,
+                address2,
+                city,
+                cityId,
+                country,
+                countryId,
+                firstName,
+                label,
+                landmark,
+                lastName,
+                mobile,
+                mobileCode,
+                pincode,
+                rowId,
+                state,
+                stateId
+            ],
+            title Data
+        }
+    }
+}

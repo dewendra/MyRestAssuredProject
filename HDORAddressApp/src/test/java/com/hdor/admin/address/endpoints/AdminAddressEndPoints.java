@@ -89,7 +89,7 @@ public class AdminAddressEndPoints {
 	
 	private static HashMap<String, Object> getAddressPayload(){
 		HashMap<String, Object> payload=new HashMap<String, Object>();
-		payload.put("rowId", 487);
+		//payload.put("rowId", 487);
 		payload.put("pincode", "110043");
 		payload.put("country", "India");
 		payload.put("state", "Delhi");

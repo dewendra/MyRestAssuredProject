@@ -3,13 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.hdor.user.address.test.UserAddressTest">
+      <class name="com.hdor.admin.address.test.AdminAddressTest">
         <methods>
-          <include name="removeAddress"/>
+          <include name="getPrimaryAddressTest"/>
+          <include name="updateAddressTest"/>
+          <include name="removeAddressTest"/>
+          <include name="markPrimaryAddressTest"/>
+          <include name="saveAddressTest"/>
           <include name="setup"/>
-          <include name="getAllDeliveryAddressTest"/>
         </methods>
-      </class> <!-- com.hdor.user.address.test.UserAddressTest -->
+      </class> <!-- com.hdor.admin.address.test.AdminAddressTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
