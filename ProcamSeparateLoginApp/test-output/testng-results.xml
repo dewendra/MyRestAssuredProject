@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-02-20T17:54:10 IST" name="Default suite" finished-at="2026-02-20T17:54:26 IST" duration-ms="15826">
+    <groups>
+    </groups>
+    <test started-at="2026-02-20T17:54:10 IST" name="Default test" finished-at="2026-02-20T17:54:26 IST" duration-ms="15826">
+      <class name="com.api.test.LoginApiTest">
+        <test-method signature="clientToken()[pri:0, instance:com.api.test.LoginApiTest@7cc0cdad]" started-at="2026-02-20T17:54:10 IST" name="clientToken" description="Verify client API is working......" finished-at="2026-02-20T17:54:13 IST" duration-ms="3228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clientToken -->
+        <test-method signature="clientOtp()[pri:0, instance:com.api.test.LoginApiTest@7cc0cdad]" started-at="2026-02-20T17:54:13 IST" name="clientOtp" finished-at="2026-02-20T17:54:15 IST" depends-on-methods="com.api.test.LoginApiTest.clientToken" duration-ms="1834" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clientOtp -->
+        <test-method signature="login()[pri:0, instance:com.api.test.LoginApiTest@7cc0cdad]" started-at="2026-02-20T17:54:15 IST" name="login" finished-at="2026-02-20T17:54:17 IST" depends-on-methods="com.api.test.LoginApiTest.clientOtp" duration-ms="1706" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="getEventProperties()[pri:0, instance:com.api.test.LoginApiTest@7cc0cdad]" started-at="2026-02-20T17:54:17 IST" name="getEventProperties" finished-at="2026-02-20T17:54:19 IST" depends-on-methods="com.api.test.LoginApiTest.login" duration-ms="1638" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getEventProperties -->
+        <test-method signature="getPersonalDetails()[pri:0, instance:com.api.test.LoginApiTest@7cc0cdad]" started-at="2026-02-20T17:54:19 IST" name="getPersonalDetails" finished-at="2026-02-20T17:54:20 IST" depends-on-methods="com.api.test.LoginApiTest.login" duration-ms="1653" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPersonalDetails -->
+        <test-method signature="setPersonalDetails()[pri:0, instance:com.api.test.LoginApiTest@7cc0cdad]" started-at="2026-02-20T17:54:20 IST" name="setPersonalDetails" finished-at="2026-02-20T17:54:22 IST" depends-on-methods="com.api.test.LoginApiTest.getPersonalDetails" duration-ms="1893" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setPersonalDetails -->
+        <test-method signature="getCartDetails()[pri:0, instance:com.api.test.LoginApiTest@7cc0cdad]" started-at="2026-02-20T17:54:22 IST" name="getCartDetails" finished-at="2026-02-20T17:54:24 IST" depends-on-methods="com.api.test.LoginApiTest.setPersonalDetails" duration-ms="1693" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCartDetails -->
+        <test-method signature="getEcventTicketDetails()[pri:0, instance:com.api.test.LoginApiTest@7cc0cdad]" started-at="2026-02-20T17:54:24 IST" name="getEcventTicketDetails" finished-at="2026-02-20T17:54:26 IST" depends-on-methods="com.api.test.LoginApiTest.setPersonalDetails" duration-ms="2137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getEcventTicketDetails -->
+      </class> <!-- com.api.test.LoginApiTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
