@@ -129,19 +129,14 @@ public class LoginApiTest {
 		SetPersonalDetailsRequest setPersonalDetailsRequest = new SetPersonalDetailsRequest(questions, 23, null, 0,
 				"Amar", "One", "amar1@yopmail.com", "male", "91-9876543210", 97, false, "Indian", "2010-04-05",
 				address);
-		Response response=authService.setPersonalDetails(setPersonalDetailsRequest);
+		Response response=authService.savePersonalDetails(setPersonalDetailsRequest);
 		System.out.println(response.asPrettyString());
 		SetPersonalDetailsResponse setPersonalDetailsResponse=response.as(SetPersonalDetailsResponse.class);
 		}
 
 	@Test(dependsOnMethods = "setPersonalDetails")
 	public void getCartDetails() {
-		authService.setBearerToken(userToken);
-		GetCartDetailsRequest getCartDetailsRequest=new GetCartDetailsRequest("23");
-		Response response=authService.getCartDetails(getCartDetailsRequest);
-		GetCartDetailsResponse getCartDetailsResponse=response.as(GetCartDetailsResponse.class);
-		System.out.println("Response:-> "+response.asPrettyString());
-		System.out.println("Billing Amount: "+getCartDetailsResponse.getCartData().getBillingAmount());
+		fetchAndPrintCartDetails();
 	}
 	
 	@Test(dependsOnMethods = "setPersonalDetails")
@@ -174,6 +169,7 @@ public class LoginApiTest {
 		Response response=authService.saveEventTicketDetails(saveEventTicketRequest);
 		SaveEventTicketResponse saveEventTicketResponse=response.as(SaveEventTicketResponse.class);
 		System.out.println("Response:-> "+response.asPrettyString());
+		fetchAndPrintCartDetails();
 	
 	}
 	
@@ -186,6 +182,7 @@ public class LoginApiTest {
 		Response response=authService.charityDonationDetails(charityDonationRequest);
 		CharityDonationResponse charityDonationResponse=response.as(CharityDonationResponse.class);
 		System.out.println("Response:-> "+response.asPrettyString());
+		fetchAndPrintCartDetails();
 	}
 	
 	@Test(dependsOnMethods = "saveCharityDonationDetails")
@@ -199,7 +196,7 @@ public class LoginApiTest {
 	
 	
 	
-	
+	//@Test(dependsOnMethods = "checkoutPage")
 	public void buyerPaymentDetails() {
 		authService.setBearerToken(userToken);
 		EventPaymentRequest eventPaymentRequest=new EventPaymentRequest(verifier, null, userToken, null, accessToken, null, null);
@@ -208,8 +205,15 @@ public class LoginApiTest {
 		System.out.println("Response:-> "+response.asPrettyString());
 	}
 	
-	
-	
+	//----common method----
+	public void fetchAndPrintCartDetails() {
+		authService.setBearerToken(userToken);
+		GetCartDetailsRequest getCartDetailsRequest=new GetCartDetailsRequest("23");
+		Response response=authService.getCartDetails(getCartDetailsRequest);
+		GetCartDetailsResponse getCartDetailsResponse=response.as(GetCartDetailsResponse.class);
+		System.out.println("Response:-> "+response.asPrettyString());
+		System.out.println("Billing Amount: "+getCartDetailsResponse.getCartData().getBillingAmount());
+	}
 	
 	
 	

@@ -72,7 +72,7 @@ public class AuthService extends BaseSerivce {
 		return getQueryRequest(endPoint, queryParams);
 	}
 
-	public Response setPersonalDetails(SetPersonalDetailsRequest payload) {
+	public Response savePersonalDetails(SetPersonalDetailsRequest payload) {
 		String endPoint = BASE_PATH + "/registration/primary/details/save";
 		System.out.println("Full API URL: https://apitest.procam.in" + endPoint);
 		return postRequest(payload, endPoint);
