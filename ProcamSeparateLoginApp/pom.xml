@@ -3,10 +3,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>ProcamSeparateLoginApp</groupId>
-	<artifactId>ProcamSeparateLoginApp</artifactId>
+	<groupId>ProcamRegistrationFlowApp</groupId>
+	<artifactId>ProcamRegistrationFlowApp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Procam Separate Login App</name>
+	<name>Procam Registration Flow App</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
