@@ -6,21 +6,30 @@ import java.util.List;
 import org.testng.annotations.Test;
 
 import com.api.models.request.AddressDetailsRequest;
+import com.api.models.request.CharityDetailsInRequest;
+import com.api.models.request.CharityDonationRequest;
+import com.api.models.request.CheckoutPageDetailsRequest;
 import com.api.models.request.ClientTokenRequest;
+import com.api.models.request.EventPaymentRequest;
 import com.api.models.request.EventPropertiesRequest;
 import com.api.models.request.EventTicketDetailsRequest;
+import com.api.models.request.EventTicketRequest;
 import com.api.models.request.GetCartDetailsRequest;
 import com.api.models.request.GetPersonalDetailsRequest;
 import com.api.models.request.LoginRequest;
 import com.api.models.request.QuestionsDetailsRequest;
+import com.api.models.request.SaveEventTicketRequest;
 import com.api.models.request.SetPersonalDetailsRequest;
 import com.api.models.request.UserOtpRequest;
+import com.api.models.response.CharityDonationResponse;
 import com.api.models.response.ClientTokenResponse;
+import com.api.models.response.EventPaymentResponse;
 import com.api.models.response.EventPropertiesResponse;
 import com.api.models.response.EventTicketDetailsResponse;
 import com.api.models.response.GetCartDetailsResponse;
 import com.api.models.response.GetPersonalDetailsResponse;
 import com.api.models.response.LoginResponse;
+import com.api.models.response.SaveEventTicketResponse;
 import com.api.models.response.SetPersonalDetailsResponse;
 import com.api.models.response.UserOtpResponse;
 import com.api.service.AuthService;
@@ -136,7 +145,7 @@ public class LoginApiTest {
 	}
 	
 	@Test(dependsOnMethods = "setPersonalDetails")
-	public void getEcventTicketDetails() {
+	public void getEventTicketDetails() {
 		authService.setBearerToken(userToken);
 		EventTicketDetailsRequest eventTicketDetailsRequest=new EventTicketDetailsRequest("23", "on_ground", "MAILTESTCODE1");
 		Response response=authService.getEventTicketDetails(eventTicketDetailsRequest);
@@ -156,10 +165,48 @@ public class LoginApiTest {
 		 
 	}
 	
+	@Test(dependsOnMethods = "getEventTicketDetails")
+	public void saveEventTicketDetails() {
+		authService.setBearerToken(userToken);
+		List<EventTicketRequest> tickets = new ArrayList<>();
+		tickets.add(new EventTicketRequest(302, 164, "on_ground"));
+		SaveEventTicketRequest saveEventTicketRequest=new SaveEventTicketRequest("23", "MAILTESTCODE1", tickets);
+		Response response=authService.saveEventTicketDetails(saveEventTicketRequest);
+		SaveEventTicketResponse saveEventTicketResponse=response.as(SaveEventTicketResponse.class);
+		System.out.println("Response:-> "+response.asPrettyString());
+	
+	}
+	
+	@Test(dependsOnMethods = "saveEventTicketDetails")
+	public void saveCharityDonationDetails() {
+		authService.setBearerToken(userToken);
+		List<CharityDetailsInRequest> charity=new ArrayList<>();
+		charity.add(new CharityDetailsInRequest(782, "PT-1", 100));
+		CharityDonationRequest charityDonationRequest=new CharityDonationRequest("23", "MAILTESTCODE1","0", true, false,  0, "Divya Kumari", "ABCDE1234F", charity);
+		Response response=authService.charityDonationDetails(charityDonationRequest);
+		CharityDonationResponse charityDonationResponse=response.as(CharityDonationResponse.class);
+		System.out.println("Response:-> "+response.asPrettyString());
+	}
+	
+	@Test(dependsOnMethods = "saveCharityDonationDetails")
+	public void checkoutPage() {
+		authService.setBearerToken(userToken);
+		CheckoutPageDetailsRequest checkoutPageDetailsRequest=new CheckoutPageDetailsRequest(verifier, userToken, false, accessToken);
+		Response response=authService.checkoutPageDetails(checkoutPageDetailsRequest);
+		System.out.println("Response:-> "+response.asPrettyString());
+	}
 	
 	
 	
 	
+	
+	public void buyerPaymentDetails() {
+		authService.setBearerToken(userToken);
+		EventPaymentRequest eventPaymentRequest=new EventPaymentRequest(verifier, null, userToken, null, accessToken, null, null);
+		Response response=authService.buyerPaymetDetails(eventPaymentRequest);	
+		EventPaymentResponse eventPaymentResponse=response.as(EventPaymentResponse.class);
+		System.out.println("Response:-> "+response.asPrettyString());
+	}
 	
 	
 	

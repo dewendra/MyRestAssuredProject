@@ -3,16 +3,16 @@ package com.api.models.response;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class CharityDetails {
+public class CharityDetailsResponse {
 	private int ngoId;
     private String ngoName;
     private double amount;
     
-	public CharityDetails() {
+	public CharityDetailsResponse() {
 		
 	}
 
-	public CharityDetails(int ngoId, String ngoName, double amount) {
+	public CharityDetailsResponse(int ngoId, String ngoName, double amount) {
 		super();
 		this.ngoId = ngoId;
 		this.ngoName = ngoName;

@@ -4,12 +4,16 @@ import java.util.HashMap;
 import java.util.Map;
 
 import com.api.base.BaseSerivce;
+import com.api.models.request.CharityDonationRequest;
+import com.api.models.request.CheckoutPageDetailsRequest;
 import com.api.models.request.ClientTokenRequest;
+import com.api.models.request.EventPaymentRequest;
 import com.api.models.request.EventPropertiesRequest;
 import com.api.models.request.EventTicketDetailsRequest;
 import com.api.models.request.GetCartDetailsRequest;
 import com.api.models.request.GetPersonalDetailsRequest;
 import com.api.models.request.LoginRequest;
+import com.api.models.request.SaveEventTicketRequest;
 import com.api.models.request.SetPersonalDetailsRequest;
 import com.api.models.request.UserOtpRequest;
 
@@ -86,5 +90,31 @@ public class AuthService extends BaseSerivce {
 		String endPoint = BASE_PATH + "/registration/tickets";
 		System.out.println("Full API URL: https://apitest.procam.in" + endPoint);
 		return postRequest(payload, endPoint);
+	}
+	
+	public Response saveEventTicketDetails(SaveEventTicketRequest payload) {
+		String endPoint = BASE_PATH + "/registration/v2/ticket/save";
+		System.out.println("Full API URL: https://apitest.procam.in" + endPoint);
+		return postRequest(payload, endPoint);
+	}
+	
+	public Response charityDonationDetails(CharityDonationRequest payload) {
+		String endPoint = BASE_PATH + "/registration/charity/save";
+		System.out.println("Full API URL: https://apitest.procam.in" + endPoint);
+		return postRequest(payload, endPoint);
+		
+	}
+	
+	public Response checkoutPageDetails(CheckoutPageDetailsRequest payload) {
+		String endPoint = BASE_PATH + "/transaction/v2/checkout";
+		System.out.println("Full API URL: https://apitest.procam.in" + endPoint);
+		return postRequest(payload, endPoint);
+		
+	}
+	public Response buyerPaymetDetails(EventPaymentRequest payload) {
+		String endPoint = BASE_PATH + "/transaction/v2/payment/initiate";
+		System.out.println("Full API URL: https://apitest.procam.in" + endPoint);
+		return postRequest(payload, endPoint);
+		
 	}
 }

@@ -22,7 +22,7 @@ public class CartData {
     private List<TaxDetails> tax;
     private List<TicketDetails> tickets;
     private List<AddonDetails> addons;
-    private List<CharityDetails> charity;
+    private List<CharityDetailsResponse> charity;
 
     private Object tgb;
 
@@ -33,7 +33,7 @@ public class CartData {
 	public CartData(String currency, double billingAmount, double registrationAmount, double addonAmount,
 			double charityAmount, double tgbAmount, double discountAmount, double payableAmount, int totalItems,
 			int discountItems, boolean fundraiser, List<TaxDetails> tax, List<TicketDetails> tickets,
-			List<AddonDetails> addons, List<CharityDetails> charity, Object tgb) {
+			List<AddonDetails> addons, List<CharityDetailsResponse> charity, Object tgb) {
 		super();
 		this.currency = currency;
 		this.billingAmount = billingAmount;
@@ -165,11 +165,11 @@ public class CartData {
 		this.addons = addons;
 	}
 
-	public List<CharityDetails> getCharity() {
+	public List<CharityDetailsResponse> getCharity() {
 		return charity;
 	}
 
-	public void setCharity(List<CharityDetails> charity) {
+	public void setCharity(List<CharityDetailsResponse> charity) {
 		this.charity = charity;
 	}
 

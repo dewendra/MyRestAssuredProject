@@ -1,5 +1,8 @@
 package com.api.models.response;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class AddressDetailsResponse {
 	private String name;
 	private String email;
